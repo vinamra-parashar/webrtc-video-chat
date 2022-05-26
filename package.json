@@ -1,24 +1,22 @@
 {
-  "name": "simplewebrtc-messenger",
-  "version": "1.0.0",
-  "description": "Simple WebRTC Messenger",
+  "name": "livestream-server",
+  "version": "0.0.1",
+  "description": "A conference call implementation using WebRTC, Socket.io and Node.js.",
+  "main": "src/app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
   "scripts": {
-    "start": "node server.js"
+    "start": "node src/app.js",
+    "watch": "nodemon --watch \"src/\" --exec \"node src/app.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "WebRTC"
-  ],
-  "author": "Michael Wanyoike",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:brandiqa/simplewebrtc-messenger.git"
-  },
-  "dependencies": {
-    "express": "^4.16.3",
-    "handlebars": "^4.7.6",
-    "jquery": "^3.5.1",
-    "semantic-ui-css": "^2.3.1",
-    "simplewebrtc": "^3.0.2"
-  }
+    "LiveStream",
+    "Server"
+  ]
 }
